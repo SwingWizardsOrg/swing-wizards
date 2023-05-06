@@ -14,8 +14,8 @@ const Home = () => {
             <h3>&#10004; A Great Community</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-10">
-            <button className="px-5 py-2 bg-blue-950 text-white rounded-xl">LOGIN</button>
-            <button className="px-5 py-3 bg-red-700 text-white rounded-xl">SIGN IN</button>
+            <button className="px-5 py-2 bg-blue-950 text-white rounded-xl">SIGN IN</button>
+            <button className="px-5 py-3 bg-red-700 text-white rounded-xl">SIGN UP</button>
           </div>
         </div>
       </section>

@@ -16,7 +16,7 @@ const Nav = () => {
           <nav className='flex justify-between items-center px-4'>
             {/* Top Nav */}
             <div className="p-2">
-              <h2><b><span className="text-blue-900">S</span>wing <span className="text-blue-900">W</span>izard</b></h2>
+              <h2><b><span className="text-blue-900">S</span>wing <span className="text-blue-900">W</span>izardS</b></h2>
             </div>
             <div>
               <ul className='hidden md:flex text-xl p-2'>
