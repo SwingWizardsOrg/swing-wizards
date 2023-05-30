@@ -16,18 +16,18 @@ const Nav = () => {
           <nav className='flex justify-between items-center px-4'>
             {/* Top Nav */}
             <div className="p-2">
-              <h2><b><span className="text-blue-900">S</span>wing <span className="text-blue-900">W</span>izards</b></h2>
+              <a href="/"><h2><b><span className="text-blue-900">S</span>wing <span className="text-blue-900">W</span>izards</b></h2></a>
             </div>
             <div>
               <ul className='hidden md:flex text-xl p-2'>
                 <li>
-                  <a href="/" className="hover:text-[#4F5DEC] px-3 py-2 ">Investment</a>
+                  <a href="https://swinginvestment.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Investment</a>
                 </li>
                 <li>
-                  <a href="/cars" className="hover:text-[#4F5DEC] px-3 py-2 ">Web School</a>
+                  <a href="https://swingschool.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Web School</a>
                 </li>
                 <li>
-                  <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">Community</a>
+                  <a href="https://swingcommunity.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Community</a>
                 </li>
                 <li>
                   <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
@@ -55,19 +55,19 @@ const Nav = () => {
               <div className='md:hidden absolute z-10 top-12 left-0  w-full text-black'>
                 <ul className='text-center mb-2 bg-white p-2 mx-4'>
                   <li>
-                    <a href="/" className="hover:text-[#4F5DEC] px-3 py-2 ">Investment</a>
+                    <a href="https://swinginvestment.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Investment</a>
                   </li>
                   <li>
-                    <a href="/cars" className="hover:text-[#4F5DEC] px-3 py-2 ">Web School</a>
+                    <a href="https://swingschool.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Web School</a>
                   </li>
                   <li>
-                    <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">Community</a>
+                    <a href="https://swingcommunity.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Community</a>
                   </li>
                   <li>
-                    <a href="/services" className="hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
+                    <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
                   </li>
                   <li>
-                    <a href="/contact" className="hover:text-[#4F5DEC] px-3 py-2">Create Account</a>
+                    <a href="/login" className="hover:text-[#4F5DEC] px-3 py-2">Create Account</a>
                   </li>
                 </ul>
               </div>
