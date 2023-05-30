@@ -30,10 +30,10 @@ const Nav = () => {
                   <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">Community</a>
                 </li>
                 <li>
-                  <a href="/services" className="hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
+                  <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
                 </li>
                 <li>
-                  <a href="/contact" className="hover:text-[#4F5DEC] px-3 py-2">Create Account</a>
+                  <a href="/login" className="hover:text-[#4F5DEC] px-3 py-2">Create Account</a>
                 </li>
               </ul>
             </div>
