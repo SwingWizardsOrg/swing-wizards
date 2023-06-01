@@ -1,9 +1,10 @@
 import React from 'react'
+import Signinbox from '../Components/Signinbox'
 
 const Login = () => {
   return (
     <div>
-      Login
+      <Signinbox />      
     </div>
   )
 }
