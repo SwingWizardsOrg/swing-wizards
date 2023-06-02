@@ -14,8 +14,8 @@ const Home = () => {
             <h3>&#10004; A Great Community</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-10">
-            <button className="px-5 py-2 bg-blue-950 hover:bg-blue-900 text-white rounded-xl">SIGN IN</button>
-            <button className="px-5 py-3 bg-red-700 hover:bg-red-600 text-white rounded-xl">SIGN UP</button>
+            <a href="/login" className="px-5 py-3 bg-blue-950 hover:bg-blue-900 text-white rounded-xl">SIGN IN</a>
+            <a href="/register" className="px-5 py-3 bg-red-700 hover:bg-red-600 text-white rounded-xl">SIGN UP</a>
           </div>
         </div>
       </section>
@@ -30,7 +30,7 @@ const Home = () => {
               <br />
               <div className="space-y-3">
                 <h3>INVESTMENT APP</h3>
-                <button className="px-5 py-2 bg-blue-950  hover:bg-blue-900 rounded-lg"><a href="/#">GO</a></button>
+                <button className="px-5 py-2 bg-blue-950  hover:bg-blue-900 rounded-lg"><a href="https://swinginvestment.vercel.app/" target="_blank" rel="noreferrer">GO</a></button>
               </div>
             </div>
             <div className="border-8 border-blue-950 p-4 rounded-3xl">
@@ -39,8 +39,8 @@ const Home = () => {
               </div>
               <br />
               <div className="space-y-3">
-                <h3>TRADING</h3>
-                <button className="px-5 py-2 bg-blue-950 hover:bg-blue-900 rounded-lg"><a href="/#">GO</a></button>
+                <h3>TRADING SCHOOL</h3>
+                <button className="px-5 py-2 bg-blue-950 hover:bg-blue-900 rounded-lg"><a href="https://swingschool.vercel.app/" target="_blank" rel="noreferrer">GO</a></button>
               </div>
             </div>
             <div className="border-8 border-blue-950 p-4 rounded-3xl">
@@ -50,7 +50,7 @@ const Home = () => {
               <br />
               <div className="space-y-3">
                 <h3>COMMUNITY</h3>
-                <button className="px-5 py-2 bg-blue-950 hover:bg-blue-900 rounded-lg"><a href="/#">GO</a></button>
+                <button className="px-5 py-2 bg-blue-950 hover:bg-blue-900 rounded-lg"><a href="https://swingcommunity.vercel.app/" target="_blank" rel="noreferrer">GO</a></button>
               </div>
             </div>
           </div>
