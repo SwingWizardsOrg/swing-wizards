@@ -1,5 +1,5 @@
 import React from 'react'
-
+import SignUp from '../Components/SignUp'
 const Register = () => {
   return (
     <div>
@@ -10,6 +10,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+    <SignUp />
     </div>
   )
 }
