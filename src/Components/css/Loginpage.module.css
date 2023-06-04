@@ -17,9 +17,14 @@
     padding-left: 25px;
 }
 
+
+
 .input_div{
     height: 40px;
-    width: 150px;
+    margin-top: 30px;
+    padding: 5px;
+    width: 230px;
+    border-radius: 10px;
     background-color: black;
 } 
 .image_div{
@@ -40,15 +45,18 @@
     padding-left: 10px;
     
 }
-.input_div{
-    height: 40px;
-    margin-top: 30px;
-    padding: 5px;
-    width: 230px;
-    border-radius: 10px;
-} 
+.input1{
+    background-color: black;
+}
+.input1:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
 .input{
     background: none;
+    width:90%;
     font-size: 16px;
     background: none;
     border: none; 
@@ -97,6 +105,31 @@
         width: 300px;
         border-radius: 25px;
         padding-left: 25px;
+    }
+    .input_div{
+        height: 40px;
+        margin-top: 30px;
+        padding: 5px;
+        width: 230px;
+        border-radius: 10px;
+        background-color: black;
+    }  
+    .input{
+        background: none;
+        width:80%;
+        font-size: 16px;
+        background: none;
+        border: none; 
+        color: white;
+    } 
+    .input1{
+        width: 80%;
+        margin-right: 10%;
+    }
+    .input1:focus{
+        outline: thin dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+        outline-offset: 0px;
     }
     
 }
