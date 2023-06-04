@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import styles from "./css/signup.module.css";
+import {Icon} from 'react-icons-kit';
+import {eyeOff} from 'react-icons-kit/feather/eyeOff';
+import {eye} from 'react-icons-kit/feather/eye'
 const SignUp = () => {
   const [inputs, setInputs] = useState({});
+  const [type, setType] = useState('password');
+  const [icon, setIcon] = useState(eyeOff);
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -11,6 +17,16 @@ const SignUp = () => {
     event.preventDefault();
     console.log(inputs);
   };
+  const handleToggle = () => {
+    if (type==='password'){
+       setIcon(eye);
+       setType('text')
+    } else {
+       setIcon(eyeOff)
+       setType('password')
+    }
+ }
+
 
   return (
     <div className={styles.main1}>
@@ -23,7 +39,7 @@ const SignUp = () => {
           <div className={styles.input_div}>
             <input
               type="text"
-              className={styles.input}
+              className={styles.input1}
               placeholder="Name"
               name="username"
               onChange={handleChange}
@@ -32,7 +48,7 @@ const SignUp = () => {
           <div className={styles.input_div}>
             <input
               type="text"
-              className={styles.input}
+              className={styles.input1}
               placeholder="Email"
               name="email"
               onChange={handleChange}
@@ -40,12 +56,15 @@ const SignUp = () => {
           </div>
           <div className={styles.input_div}>
             <input
-              type="text"
+              type={type}
               className={styles.input}
               placeholder="Password"
               name="password"
               onChange={handleChange}
             />
+            <span className={styles.eyeIcon}onClick={handleToggle}>
+                  <Icon  icon={icon} size={20}/>
+              </span>
           </div>
           <div className={styles.submission_div}>
             <button
