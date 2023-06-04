@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import styles from "./css/Loginpage.module.css";
-
+import {Icon} from 'react-icons-kit';
+import {eyeOff} from 'react-icons-kit/feather/eyeOff';
+import {eye} from 'react-icons-kit/feather/eye'
 const Signinbox = () => {
   const [inputs, setInputs] = useState({});
+  const [type, setType] = useState('password');
+  const [icon, setIcon] = useState(eyeOff);
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -12,6 +17,15 @@ const Signinbox = () => {
     event.preventDefault();
     console.log(inputs);
   };
+  const handleToggle = () => {
+    if (type==='password'){
+       setIcon(eye);
+       setType('text')
+    } else {
+       setIcon(eyeOff)
+       setType('password')
+    }
+ }
 
   return (
     <div className={styles.main}>
@@ -22,7 +36,7 @@ const Signinbox = () => {
             <div className={styles.input_div}>
               <input
                 type="text"
-                className={styles.input}
+                className={styles.input1}
                 placeholder="Username"
                 name="username"
                 onChange={handleChange}
@@ -30,12 +44,16 @@ const Signinbox = () => {
             </div>
             <div className={styles.input_div}>
               <input
-                type="text"
+                type={type}
                 className={styles.input}
                 placeholder="Password"
                 name="password"
+                autoComplete="current-password"
                 onChange={handleChange}
               />
+              <span onClick={handleToggle}>
+                  <Icon  icon={icon} size={20}/>
+              </span>
             </div>
             <div className={styles.submission_div}>
               <button
