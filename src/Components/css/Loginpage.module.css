@@ -1,135 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap');
-.main{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap");
+.main {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-family: Roboto;
+  font-size: medium;
+  padding-left: 12%;
+  padding-top: 50%;
+}
+.subdiv {
+  background-color: #424242;
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  padding-left: 25px;
+}
+
+.input_div {
+  height: 40px;
+  margin-top: 30px;
+  padding: 5px;
+  width: 230px;
+  border-radius: 10px;
+  background-color: black;
+}
+.image_div {
+  height: 40px;
+  width: 250px;
+  text-align: center;
+}
+.logo {
+  height: 30px;
+  width: 30px;
+}
+.subdiv2 {
+  height: 240px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.input1 {
+  background-color: black;
+}
+.input1:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+.input {
+  background: none;
+  width: 90%;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: white;
+}
+.input:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+.submission_div {
+  margin-top: 30px;
+  padding: 10px;
+  width: 230px;
+}
+
+.submission_button {
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 60px;
+  border-radius: 6px;
+  border: none;
+}
+.submission_button:hover {
+  background-color: rgb(101, 140, 187);
+}
+.submission_button:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .main {
     background-color: black;
     height: 100vh;
     color: white;
     font-family: Roboto;
     font-size: medium;
-    padding-left: 12%;
-    padding-top: 50%;
-}
-.subdiv{
+    padding-left: 39%;
+    padding-top: 10%;
+  }
+  .subdiv {
     background-color: #424242;
     height: 300px;
     width: 300px;
     border-radius: 25px;
     padding-left: 25px;
-}
-
-
-
-.input_div{
+  }
+  .input_div {
     height: 40px;
     margin-top: 30px;
     padding: 5px;
     width: 230px;
     border-radius: 10px;
     background-color: black;
-} 
-.image_div{
-    height: 40px;
-    width: 250px;
-    text-align: center;
-}
-.logo{
-    height: 30px;
-    width:  30px;
-}
-.subdiv2{
-    height: 240px;
-    width: 250px;
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    
-}
-.input1{
-    background-color: black;
-}
-.input1:focus{
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-}
-
-.input{
+  }
+  .input {
     background: none;
-    width:90%;
+    width: 80%;
     font-size: 16px;
     background: none;
-    border: none; 
+    border: none;
     color: white;
-}
-.input:focus{
+  }
+  .input1 {
+    width: 80%;
+    margin-right: 10%;
+  }
+  .input1:focus {
     outline: thin dotted;
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: 0px;
-}
-.submission_div{
-    margin-top: 30px;
-    padding:10px;
-    width: 230px;
-}
-
-.submission_button{
-    background-color: blue;
-    color: white;
-    height: 40px;
-    width: 60px;
-    border-radius: 6px;
-    border:none;
-}
-.submission_button:hover{
-    background-color: rgb(101,140,187);
-}
-.submission_button:focus{
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;  
-}
-@media only screen and (min-width: 768px) {
-    .main{
-        background-color: black;
-        height: 100vh;
-        color: white;
-        font-family: Roboto;
-        font-size: medium;
-        padding-left: 39%;
-        padding-top: 10%;
-    }
-    .subdiv{
-        background-color: #424242;
-        height: 300px;
-        width: 300px;
-        border-radius: 25px;
-        padding-left: 25px;
-    }
-    .input_div{
-        height: 40px;
-        margin-top: 30px;
-        padding: 5px;
-        width: 230px;
-        border-radius: 10px;
-        background-color: black;
-    }  
-    .input{
-        background: none;
-        width:80%;
-        font-size: 16px;
-        background: none;
-        border: none; 
-        color: white;
-    } 
-    .input1{
-        width: 80%;
-        margin-right: 10%;
-    }
-    .input1:focus{
-        outline: thin dotted;
-        outline: 0px auto -webkit-focus-ring-color;
-        outline-offset: 0px;
-    }
-    
+  }
 }
