@@ -37,14 +37,32 @@
     width: 70%;
     margin-left: 5%;
 } 
-
+.input1{
+    color: rgb(131, 147, 160);
+    background: none;
+    font-size: 15px;
+    background: none;
+    border: none; 
+    width: 70%;
+    margin-right: 25%;
+}
 .input{
     color: rgb(131, 147, 160);
     background: none;
     font-size: 15px;
     background: none;
     border: none; 
+    width: 70%;
 }
+.eyeIcon{
+    margin-left: 20%;
+}
+.input1:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
 .input:focus{
     outline: thin dotted;
     outline: 0px auto -webkit-focus-ring-color;
@@ -58,7 +76,7 @@
 }
 .submission_button{
     background-color: red;
-    margin-right: 60%;
+    margin-right: 70%;
     color: white;
     border-radius: 10px;
     border:none;
@@ -102,12 +120,25 @@
         height: 40px;
         width: 60px;
     }
+    .input1{
+        color: rgb(131, 147, 160);
+        background: none;
+        font-size: 15px;
+        background: none;
+        border: none; 
+        width: 70%;
+        margin-right: 25%;
+    }
     .input{
         color: rgb(131, 147, 160);
         background: none;
         font-size: 15px;
         background: none;
         border: none; 
-        margin-right: 70%;
+        width: 70%;
+
+    }
+    .eyeIcon{
+        margin-left: 20%;
     }
     }
