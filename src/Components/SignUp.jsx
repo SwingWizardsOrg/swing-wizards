@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styles from "./css/signup.module.css";
-import {Icon} from 'react-icons-kit';
-import {eyeOff} from 'react-icons-kit/feather/eyeOff';
-import {eye} from 'react-icons-kit/feather/eye'
+import { Icon } from "react-icons-kit";
+import { eyeOff } from "react-icons-kit/feather/eyeOff";
+import { eye } from "react-icons-kit/feather/eye";
 const SignUp = () => {
   const [inputs, setInputs] = useState({});
-  const [type, setType] = useState('password');
+  const [type, setType] = useState("password");
   const [icon, setIcon] = useState(eyeOff);
 
   const handleChange = (e) => {
@@ -18,15 +18,14 @@ const SignUp = () => {
     console.log(inputs);
   };
   const handleToggle = () => {
-    if (type==='password'){
-       setIcon(eye);
-       setType('text')
+    if (type === "password") {
+      setIcon(eye);
+      setType("text");
     } else {
-       setIcon(eyeOff)
-       setType('password')
+      setIcon(eyeOff);
+      setType("password");
     }
- }
-
+  };
 
   return (
     <div className={styles.main1}>
@@ -62,9 +61,9 @@ const SignUp = () => {
               name="password"
               onChange={handleChange}
             />
-            <span className={styles.eyeIcon}onClick={handleToggle}>
-                  <Icon  icon={icon} size={20}/>
-              </span>
+            <span className={styles.eyeIcon} onClick={handleToggle}>
+              <Icon icon={icon} size={20} />
+            </span>
           </div>
           <div className={styles.submission_div}>
             <button
