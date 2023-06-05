@@ -36,44 +36,15 @@ const SignUp = () => {
       <div className={styles.subdiv2}>
         <form>
           <div className={styles.input_div}>
-<<<<<<< HEAD
-            <input 
-              type="text" 
-              className={styles.input} 
-              placeholder="Name" 
-              name="username" 
-=======
             <input
               type="text"
               className={styles.input1}
               placeholder="Name"
               name="username"
->>>>>>> 47309de666ccaddbe15b092c6f368e1decea11d1
               onChange={handleChange}
             />
           </div>
           <div className={styles.input_div}>
-<<<<<<< HEAD
-            <input 
-              type="email"
-              className={styles.input} 
-              placeholder="Email" 
-              name="email" 
-              onChange={handleChange}
-            />
-          </div> 
-          <div className={styles.input_div}>
-            <input 
-              type="password"
-              className={styles.input} 
-              placeholder="Password" 
-              name="password" 
-              onChange={handleChange}
-            />
-          </div>
-          <div className={styles.submission_div}>
-            <button type="submit" className={styles.submission_button} onClick={handleSubmit}>Sign up</button>
-=======
             <input
               type="text"
               className={styles.input1}
@@ -102,7 +73,6 @@ const SignUp = () => {
             >
               Sign up
             </button>
->>>>>>> 47309de666ccaddbe15b092c6f368e1decea11d1
           </div>
         </form>
       </div>

@@ -34,39 +34,15 @@ const Signinbox = () => {
         <div className={styles.subdiv2}>
           <form>
             <div className={styles.input_div}>
-<<<<<<< HEAD
-              <input 
-                type="text" 
-                className={styles.input} 
-                placeholder="Username" 
-                name="username" 
-=======
               <input
                 type="text"
                 className={styles.input1}
                 placeholder="Username"
                 name="username"
->>>>>>> 47309de666ccaddbe15b092c6f368e1decea11d1
                 onChange={handleChange}
               />
             </div>
             <div className={styles.input_div}>
-<<<<<<< HEAD
-              <input 
-                type="password"
-                className={styles.input} 
-                placeholder="Password" 
-                name="password" 
-                onChange={handleChange}
-              />
-            </div> 
-            <div className={styles.submission_div}>
-              <button type="submit" className={styles.submission_button} onClick={handleSubmit}>Sign In</button>
-            </div>
-          </form>
-        </div>
-      </div> 
-=======
               <input
                 type={type}
                 className={styles.input}
@@ -91,7 +67,6 @@ const Signinbox = () => {
           </form>
         </div>
       </div>
->>>>>>> 47309de666ccaddbe15b092c6f368e1decea11d1
     </div>
   );
 };
