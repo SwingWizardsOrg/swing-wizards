@@ -1,19 +1,32 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import styles from "./css/Loginpage.module.css";
-
+import { Icon } from "react-icons-kit";
+import { eyeOff } from "react-icons-kit/feather/eyeOff";
+import { eye } from "react-icons-kit/feather/eye";
 const Signinbox = () => {
-
   const [inputs, setInputs] = useState({});
+  const [type, setType] = useState("password");
+  const [icon, setIcon] = useState(eyeOff);
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    setInputs(values => ({...values, [name]: value}))
-  }
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs);
-  }
- 
+  };
+  const handleToggle = () => {
+    if (type === "password") {
+      setIcon(eye);
+      setType("text");
+    } else {
+      setIcon(eyeOff);
+      setType("password");
+    }
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.subdiv}>
@@ -21,15 +34,24 @@ const Signinbox = () => {
         <div className={styles.subdiv2}>
           <form>
             <div className={styles.input_div}>
+<<<<<<< HEAD
               <input 
                 type="text" 
                 className={styles.input} 
                 placeholder="Username" 
                 name="username" 
+=======
+              <input
+                type="text"
+                className={styles.input1}
+                placeholder="Username"
+                name="username"
+>>>>>>> 47309de666ccaddbe15b092c6f368e1decea11d1
                 onChange={handleChange}
               />
             </div>
             <div className={styles.input_div}>
+<<<<<<< HEAD
               <input 
                 type="password"
                 className={styles.input} 
@@ -44,8 +66,34 @@ const Signinbox = () => {
           </form>
         </div>
       </div> 
+=======
+              <input
+                type={type}
+                className={styles.input}
+                placeholder="Password"
+                name="password"
+                autoComplete="current-password"
+                onChange={handleChange}
+              />
+              <span onClick={handleToggle}>
+                <Icon icon={icon} size={20} />
+              </span>
+            </div>
+            <div className={styles.submission_div}>
+              <button
+                type="submit"
+                className={styles.submission_button}
+                onClick={handleSubmit}
+              >
+                Sign In
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+>>>>>>> 47309de666ccaddbe15b092c6f368e1decea11d1
     </div>
   );
 };
-  
+
 export default Signinbox;

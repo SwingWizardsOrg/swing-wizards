@@ -1,113 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-.main1{
-    background-color: black;
-    height: 100vh;
-    color: white;
-    font-family: Roboto;
-    font-size: medium;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+.main1 {
+  background-color: black;
+  height: 100vh;
+  color: white;
+  font-family: Roboto;
+  font-size: medium;
 }
-.subdiv{
-    height: 100px;
-    width: 100%;
-    padding-top: 20px;
-    text-align: center;
+.subdiv {
+  height: 100px;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
 }
-.leaf{
-    height: 60px;
-    width: 60px;
+.leaf {
+  height: 60px;
+  width: 60px;
 }
-.subdiv1{
-    height: 10%;
-    margin-top: 20%;
-    color: white;
-    text-align: center;
-    margin-bottom: 0%;
+.subdiv1 {
+  height: 10%;
+  margin-top: 20%;
+  color: white;
+  text-align: center;
+  margin-bottom: 0%;
 }
-.subdiv2{
-    height: 30%;
-    color: white;
-    text-align: center;
-    margin-top: 0%;    
+.subdiv2 {
+  height: 30%;
+  color: white;
+  text-align: center;
+  margin-top: 0%;
 }
-.input_div{
+.input_div {
+  height: 40px;
+  margin-top: 50px;
+  padding: 5px;
+  border-bottom: 1px solid rgb(29, 161, 242);
+  width: 70%;
+  margin-left: 5%;
+}
+.input1 {
+  color: rgb(131, 147, 160);
+  background: none;
+  font-size: 15px;
+  background: none;
+  border: none;
+  width: 70%;
+  margin-right: 25%;
+}
+.input {
+  color: rgb(131, 147, 160);
+  background: none;
+  font-size: 15px;
+  background: none;
+  border: none;
+  width: 70%;
+}
+.eyeIcon {
+  margin-left: 20%;
+}
+.input1:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+.input:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+
+.submission_div {
+  margin-top: 20px;
+  padding: 10px;
+  width: 80%;
+}
+.submission_button {
+  background-color: red;
+  margin-right: 70%;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 60px;
+}
+.submission_button:hover {
+  background-color: rgb(211, 73, 78);
+}
+.submission_button:focus {
+  outline: thin dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .input_div {
     height: 40px;
     margin-top: 50px;
     padding: 5px;
     border-bottom: 1px solid rgb(29, 161, 242);
-    width: 70%;
-    margin-left: 5%;
-} 
-
-.input{
+    width: 30%;
+    margin-left: 35%;
+  }
+  .subdiv1 {
+    height: 10%;
+    margin-top: 0%;
+    color: white;
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  .submission_div {
+    margin-top: 20px;
+    width: 80%;
+  }
+  .submission_button {
+    background-color: red;
+    margin-left: 44%;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 60px;
+  }
+  .input1 {
     color: rgb(131, 147, 160);
     background: none;
     font-size: 15px;
     background: none;
-    border: none; 
+    border: none;
+    width: 70%;
+    margin-right: 25%;
+  }
+  .input {
+    color: rgb(131, 147, 160);
+    background: none;
+    font-size: 15px;
+    background: none;
+    border: none;
+    width: 70%;
+  }
+  .eyeIcon {
+    margin-left: 20%;
+  }
 }
-.input:focus{
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;
-}
-
-.submission_div{
-    margin-top: 20px;
-    padding:10px;
-    width: 80%;
-}
-.submission_button{
-    background-color: red;
-    margin-right: 60%;
-    color: white;
-    border-radius: 10px;
-    border:none;
-    height: 40px;
-    width:60px
-}
-.submission_button:hover{
-    background-color: rgb(211,73,78);
-}
-.submission_button:focus{
-    outline: thin dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-    outline-offset: 0px;  
-}
-@media only screen and (min-width: 768px) {
-    .input_div{
-            height: 40px;
-            margin-top: 50px;
-            padding: 5px;
-            border-bottom: 1px solid rgb(29, 161, 242);
-            width: 30%;
-            margin-left: 35%;
-    }
-    .subdiv1{
-        height: 10%;
-        margin-top: 0%;
-        color: white;
-        text-align: center;
-        margin-bottom: 0%;
-    }
-    .submission_div{
-        margin-top: 20px;
-        width: 80%;
-    }
-    .submission_button{
-        background-color: red;
-        margin-left: 44%;
-        color: white;
-        border-radius: 10px;
-        border:none;
-        height: 40px;
-        width: 60px;
-    }
-    .input{
-        color: rgb(131, 147, 160);
-        background: none;
-        font-size: 15px;
-        background: none;
-        border: none; 
-        margin-right: 70%;
-    }
-    }
