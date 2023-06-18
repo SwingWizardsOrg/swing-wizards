@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../css/SignUp.module.css";
+import styles from "../css/signup.module.css";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
