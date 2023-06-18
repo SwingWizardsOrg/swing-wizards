@@ -1,5 +1,5 @@
-import React from "react";
-import Signinbox from "../Components/Signin/Signinbox";
+import React from 'react'
+import Signinbox from '../Components/Signinbox'
 
 const Login = () => {
   return (
@@ -11,9 +11,9 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Signinbox />
+      <Signinbox />      
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login
