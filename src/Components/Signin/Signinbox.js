@@ -54,7 +54,7 @@ const Signinbox = () => {
                 autoComplete="current-password"
                 onChange={handleChange}
               />
-              <span onClick={handleToggle}>
+              <span className={styles.eyeIcon} onClick={handleToggle}>
                 <Icon icon={icon} size={20} />
               </span>
             </div>
