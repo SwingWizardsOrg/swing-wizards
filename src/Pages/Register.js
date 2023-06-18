@@ -1,5 +1,5 @@
-import React from 'react'
-import SignUp from '../Components/SignUp'
+import React from "react";
+import SignUp from "../Components/SignUp/SignUp";
 const Register = () => {
   return (
     <div>
@@ -10,9 +10,9 @@ const Register = () => {
           </div>
         </div>
       </div>
-    <SignUp />
+      <SignUp />
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
