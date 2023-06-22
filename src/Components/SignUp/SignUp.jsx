@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import styles from "./css/signup.module.css";
+import styles from "../css/signup.module.css";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
+import PostSignupData from "./PostSignupData";
 const SignUp = () => {
   const [inputs, setInputs] = useState({});
   const [type, setType] = useState("password");
@@ -16,6 +17,7 @@ const SignUp = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs);
+    PostSignupData(inputs);
   };
   const handleToggle = () => {
     if (type === "password") {
@@ -39,7 +41,25 @@ const SignUp = () => {
             <input
               type="text"
               className={styles.input1}
-              placeholder="Name"
+              placeholder="Firstname"
+              name="firstname"
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.input_div}>
+            <input
+              type="text"
+              className={styles.input1}
+              placeholder="Lastname"
+              name="lastname"
+              onChange={handleChange}
+            />
+          </div>
+          <div className={styles.input_div}>
+            <input
+              type="text"
+              className={styles.input1}
+              placeholder="Username"
               name="username"
               onChange={handleChange}
             />
