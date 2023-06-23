@@ -66,14 +66,9 @@ const SignUp = () => {
             </span>
           </div>
           <div className={styles.submission_div}>
-            <button
-              type="submit"
-              className={styles.submission_button}
-              onClick={handleSubmit}
-            >
-              Sign up
-            </button>
+            <button type="submit" className={styles.submission_button} onClick={handleSubmit}>Sign up</button>
           </div>
+          <span>Already have an account?<a href="/login"><u>Login in</u></a></span>
         </form>
       </div>
     </div>

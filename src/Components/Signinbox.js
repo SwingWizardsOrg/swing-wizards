@@ -56,14 +56,9 @@ const Signinbox = () => {
               </span>
             </div>
             <div className={styles.submission_div}>
-              <button
-                type="submit"
-                className={styles.submission_button}
-                onClick={handleSubmit}
-              >
-                Sign In
-              </button>
+              <button type="submit" className={styles.submission_button} onClick={handleSubmit}>Sign In</button>
             </div>
+            <span><a href="/login">Register Here</a></span>
           </form>
         </div>
       </div>
