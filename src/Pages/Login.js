@@ -1,5 +1,5 @@
 import React from 'react'
-import Signinbox from '../Components/Signinbox'
+import Signinbox from '../Components/Signin/Signinbox'
 
 const Login = () => {
   return (

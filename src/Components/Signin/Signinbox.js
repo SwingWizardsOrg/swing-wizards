@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import styles from "./css/Loginpage.module.css";
+import styles from "../css/Loginpage.module.css";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
+import PostLogininData from "./PostLoginData";
 const Signinbox = () => {
   const [inputs, setInputs] = useState({});
   const [type, setType] = useState("password");
@@ -16,6 +17,7 @@ const Signinbox = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs);
+    PostLogininData(inputs)
   };
   const handleToggle = () => {
     if (type === "password") {
@@ -51,7 +53,7 @@ const Signinbox = () => {
                 autoComplete="current-password"
                 onChange={handleChange}
               />
-              <span onClick={handleToggle}>
+              <span className={styles.eyeIcon} onClick={handleToggle}>
                 <Icon icon={icon} size={20} />
               </span>
             </div>

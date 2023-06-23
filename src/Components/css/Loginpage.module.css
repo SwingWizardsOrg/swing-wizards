@@ -64,6 +64,9 @@
   outline: 0px auto -webkit-focus-ring-color;
   outline-offset: 0px;
 }
+.eyeIcon {
+  cursor : pointer;
+}
 .submission_div {
   margin-top: 30px;
   padding: 10px;
