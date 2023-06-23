@@ -33,7 +33,7 @@ const Signinbox = () => {
       await axios.post(URL,
       JSON.stringify({ username, password }),
       {
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         withCredentials: true,
       });
       toast.success("Login Successful");

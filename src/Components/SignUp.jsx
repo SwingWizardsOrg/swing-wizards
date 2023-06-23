@@ -37,7 +37,7 @@ const SignUp = () => {
       await axios.post(URL,
       JSON.stringify({ firstname, lastname, email, username, password }),
       {
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         withCredentials: true,
       });
       toast.success("Registration Successful");
