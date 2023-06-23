@@ -3,6 +3,7 @@ import styles from "./css/signup.module.css";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
+import PostRegistrationData from "./PostRegistrationData";
 const SignUp = () => {
   const [inputs, setInputs] = useState({});
   const [type, setType] = useState("password");
@@ -16,6 +17,7 @@ const SignUp = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs);
+    PostRegistrationData(inputs)
   };
   const handleToggle = () => {
     if (type === "password") {
