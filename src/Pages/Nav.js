@@ -1,5 +1,8 @@
 import React,{ useState } from 'react'
 import logo from '../images/logo.png'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Nav = () => {
 
@@ -13,6 +16,7 @@ const Nav = () => {
     <div className="nav">
       <div className="text-white shadow shadow-neutral-700">
         <div className="container mx-auto py-4">
+        <ToastContainer />
           <nav className='flex justify-between items-center px-4'>
             {/* Top Nav */}
             <div className="flex items-center p-2">
