@@ -1,14 +1,18 @@
 import React, { useState } from "react";
-import styles from "./css/Loginpage.module.css";
+import styles from "../css/Loginpage.module.css";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
+<<<<<<< HEAD:src/Components/Signinbox.js
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import axios from './api'
 
 const URL = '/tradex/user/login'
 
+=======
+import PostLogininData from "./PostLoginData";
+>>>>>>> leon:src/Components/Signin/Signinbox.js
 const Signinbox = () => {
 
   const [username,setUsername] = useState('')
@@ -17,6 +21,19 @@ const Signinbox = () => {
   const [icon, setIcon] = useState(eyeOff);
   const navigate = useNavigate()
 
+<<<<<<< HEAD:src/Components/Signinbox.js
+=======
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(inputs);
+    PostLogininData(inputs)
+  };
+>>>>>>> leon:src/Components/Signin/Signinbox.js
   const handleToggle = () => {
     if (type === "password") {
       setIcon(eye);
