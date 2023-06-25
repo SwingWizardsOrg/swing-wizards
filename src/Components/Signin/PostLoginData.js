@@ -1,7 +1,11 @@
 import axios from "axios";
 import { toast } from 'react-toastify';
+import { useNavigation } from 'react-router-dom'
 
 const PostLogininData = (Data) => {
+
+  const navigate = useNavigation()
+
   const qs = require("qs");
   axios
     .post(
@@ -12,8 +16,11 @@ const PostLogininData = (Data) => {
       })
     )
     .then((response) => {
-      console.log(response);
-      toast.success('Login Successful')
+      if (response?.status === 201) {
+        navigate('/')
+        toast.success('Login Successful')
+        console.log(response);
+      }
     })
     .catch((error) => {
       if (!error?.response) {

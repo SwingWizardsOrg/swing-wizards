@@ -1,7 +1,12 @@
 import axios from "axios";
 import { toast } from 'react-toastify';
+import { useNavigation } from 'react-router-dom'
+
 
 const PostRegistrationData = (Data) => {
+
+  const navigate = useNavigation()
+
   const qs = require("qs");
   axios
     .post(
@@ -15,8 +20,11 @@ const PostRegistrationData = (Data) => {
       })
     )
     .then((response) => {
-      console.log(response);
-      toast.success('Registration Successful')
+      if (response?.status === 200) {
+        navigate('/login')
+        toast.success('Registration Successful')
+        console.log(response);
+      }
     })
     .catch((error) => {
       if (!error?.response) {
