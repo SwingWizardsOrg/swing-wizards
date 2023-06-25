@@ -25,10 +25,10 @@ const PostLogininData = (Data) => {
     .catch((error) => {
       if (!error?.response) {
         toast.error("No Server Response");
-      } else if (error.response?.status === 404) {
+      } else if (error.response?.status === 401) {
         toast.error("Invalid Username of Password");
-      } else if (error.response?.status === 409) {
-        toast.error("Username of password required");
+      } else if (error.response?.status === 404) {
+        toast.error("Record not found");
       } else {
         toast.error("Login Failed");
       }

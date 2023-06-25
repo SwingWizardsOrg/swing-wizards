@@ -29,9 +29,9 @@ const PostRegistrationData = (Data) => {
     .catch((error) => {
       if (!error?.response) {
         toast.error("No Server Response");
-      } else if (error.response?.status === 500) {
-        toast.error("All fields are required");
       } else if (error.response?.status === 404) {
+        toast.error("All fields are required");
+      } else if (error.response?.status === 500) {
         toast.error("Username or Email Taken");
       } else {
         toast.error("Registration Failed");
