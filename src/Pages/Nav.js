@@ -57,22 +57,22 @@ const Nav = () => {
               </svg>
             )}
             {navIsShown && (
-              <div className='md:hidden absolute z-10 top-12 left-0  w-full text-black'>
-                <ul className='text-center mb-2 bg-white p-2 mx-4'>
-                  <li>
-                    <a href="https://swinginvestment.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Investment</a>
+              <div className='md:hidden absolute z-20 top-16 right-0  w-2/3  text-black'>
+                <ul className='text-center bg-[#4F5DEC]'>
+                  <li className="py-4">
+                    <a href="https://swinginvestment.vercel.app/" target="_blank" rel="noreferrer" className="bg-black text-white hover:text-[#4F5DEC] px-3 py-2">Investment</a>
                   </li>
-                  <li>
-                    <a href="https://swingschool.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Web School</a>
+                  <li className="py-4">
+                    <a href="https://swingschool.vercel.app/" target="_blank" rel="noreferrer" className="bg-black text-white hover:text-[#4F5DEC] px-3 py-2">Web School</a>
                   </li>
-                  <li>
-                    <a href="https://swingcommunity.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-[#4F5DEC] px-3 py-2">Community</a>
+                  <li className="py-4">
+                    <a href="https://swingcommunity.vercel.app/" target="_blank" rel="noreferrer" className="bg-black text-white hover:text-[#4F5DEC] px-3 py-2">Community</a>
                   </li>
-                  <li>
-                    <a href="/about" className="hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
+                  <li className="py-4">
+                    <a href="/about" className="bg-black text-white hover:text-[#4F5DEC] px-3 py-2 ">About Us</a>
                   </li>
-                  <li>
-                    <a href="/login" className="hover:text-[#4F5DEC] px-3 py-2">Create Account</a>
+                  <li className="py-4">
+                    <a href="/login" className="bg-black text-white hover:text-[#4F5DEC] px-3 py-2">Create Account</a>
                   </li>
                 </ul>
               </div>

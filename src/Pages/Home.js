@@ -14,7 +14,7 @@ const Home = () => {
             <h3>&#10004; A Great Community</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-10">
-            <a href="/login" className="px-5 py-3 bg-blue-950 hover:bg-blue-900 text-white rounded-xl">SIGN IN</a>
+            <a href="/login" className="px-5 py-3 bg-blue-950 hover:bg-blue-900 text-white rounded-xl">LOG IN</a>
             <a href="/register" className="px-5 py-3 bg-red-700 hover:bg-red-600 text-white rounded-xl">SIGN UP</a>
           </div>
         </div>
