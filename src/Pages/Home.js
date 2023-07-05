@@ -8,13 +8,16 @@ const Home = () => {
     <div>
       <section className="hero">
         <div className="container mx-auto p-4">
+        <div className="justify-center gap-10 mb-5 ">
+            <h3><b>Everything; one platform; one account; access to all</b></h3>
+          </div>
           <div className="flex flex-wrap justify-center gap-10 mb-5">
             <h3>&#10004; Free Investment</h3>
             <h3>&#10004; Free Education</h3>
             <h3>&#10004; A Great Community</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-10">
-            <a href="/login" className="px-5 py-3 bg-blue-950 hover:bg-blue-900 text-white rounded-xl">LOG IN</a>
+            <a href="/login" className="px-5 py-3 bg-blue-900 hover:bg-blue-950 text-white rounded-xl">LOG IN</a>
             <a href="/register" className="px-5 py-3 bg-red-700 hover:bg-red-600 text-white rounded-xl">SIGN UP</a>
           </div>
         </div>
