@@ -8,9 +8,6 @@ const Home = () => {
     <div>
       <section className="hero">
         <div className="container mx-auto p-4">
-        <div className="justify-center gap-10 mb-5 ">
-            <h3><b>Everything; one platform; one account; access to all</b></h3>
-          </div>
           <div className="flex flex-wrap justify-center gap-10 mb-5">
             <h3>&#10004; Free Investment</h3>
             <h3>&#10004; Free Education</h3>
