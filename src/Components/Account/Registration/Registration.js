@@ -1,15 +1,21 @@
 import axios from "axios";
 import { toast } from 'react-toastify';
-// import { useNavigation } from 'react-router-dom'
+import SignUp from "./SignUp";
+import React, { useState } from "react";
+import Postphone from "./Postphone";
 
+
+const Registration = () =>{
+
+const [isRegistered,setRegistered]= useState(false)
+
+const [SwingUserName, setSwingUserName]=useState(null)
 
 const PostRegistrationData = (Data) => {
-
-  // const navigate = useNavigation()
-
+  
   const qs = require("qs");
-  axios
-    .post(
+
+    axios.post(
       "https://swingwizards.onrender.com/tradex/user/register",
       qs.stringify({
         firstname: Data.firstname,
@@ -19,11 +25,13 @@ const PostRegistrationData = (Data) => {
         password: Data.password,
       })
     )
+
     .then((response) => {
-      if (response?.status === 200) {
-        // navigate('/login')
+      if (response?.status === 201) {
         toast.success('Registration Successful')
-        console.log(response);
+        setSwingUserName(response.data.user.Username);
+        console.log(SwingUserName);
+        setRegistered(!isRegistered);
       }
     })
     .catch((error) => {
@@ -39,6 +47,19 @@ const PostRegistrationData = (Data) => {
       console.log(error);
       console.log(error.response);
     });
+    console.log(isRegistered)
 };
 
-export default PostRegistrationData;
+return(
+  <div>
+       {!isRegistered ? (
+    <SignUp PostRegistrationData={PostRegistrationData}/>
+  ) : (
+    <Postphone SwingUserName={SwingUserName}/>
+  )}
+  
+  </div>
+)
+
+}
+export default Registration;
