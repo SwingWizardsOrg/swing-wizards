@@ -19,10 +19,10 @@ const Nav = () => {
         <ToastContainer />
           <nav className='flex justify-between items-center px-4'>
             {/* Top Nav */}
-            <div className="flex items-center p-2">
+            <a href="/" className="flex items-center p-2">
               <img width={60} height={60} src={logo} alt="logo" />
-              <a href="/"><h2><b><span className="text-blue-900">S</span>wing <span className="text-blue-900">W</span>izards</b></h2></a>
-            </div>
+              <span ><h2><b><span className="text-blue-900">S</span>wing <span className="text-blue-900">W</span>izards</b></h2></span>
+            </a>
             <div>
               <ul className='hidden md:flex text-xl p-2'>
                 <li>
