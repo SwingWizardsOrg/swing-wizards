@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import styles from "../css/Loginpage.module.css";
+import styles from "../../css/Loginpage.module.css";
 import { Icon } from "react-icons-kit";
 import { eyeOff } from "react-icons-kit/feather/eyeOff";
 import { eye } from "react-icons-kit/feather/eye";
 import PostLogininData from "./PostLoginData";
+
 const Signinbox = () => {
   const [inputs, setInputs] = useState({});
   const [type, setType] = useState("password");

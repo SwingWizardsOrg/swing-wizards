@@ -33,9 +33,15 @@
   height: 40px;
   margin-top: 50px;
   padding: 5px;
-  border-bottom: 1px solid rgb(29, 161, 242);
+
+  /* border-bottom: 1px solid rgb(29, 161, 242); */
   width: 70%;
   margin-left: 5%;
+}
+.input_div_1{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 9%;
 }
 .input1 {
   color: rgb(131, 147, 160);
@@ -71,13 +77,13 @@
 }
 
 .submission_div {
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px;
   width: 80%;
 }
 .submission_button {
   background-color: red;
-  margin-right: 70%;
+  margin-right: 55%;
   color: white;
   border-radius: 10px;
   border: none;
@@ -96,11 +102,18 @@
   .input_div {
     height: 40px;
     margin-top: 50px;
-    padding: 5px;
-    border-bottom: 1px solid rgb(29, 161, 242);
+   
+    /*padding: 5px;*/
+    /*border-bottom: 1px solid rgb(29, 161, 242);*/
     width: 30%;
-    margin-left: 35%;
+    margin-left: 26.5%;
   }
+  .input_div_1{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 22%;
+  }
+ 
   .subdiv1 {
     height: 10%;
     margin-top: 0%;
@@ -109,12 +122,12 @@
     margin-bottom: 0%;
   }
   .submission_div {
-    margin-top: 20px;
+    margin-top: 50px;
     width: 80%;
   }
   .submission_button {
     background-color: red;
-    margin-left: 44%;
+    margin-left: 43%;
     color: white;
     border-radius: 10px;
     border: none;
@@ -140,5 +153,20 @@
   }
   .eyeIcon {
     margin-left: 20%;
+  }
+}
+.main{
+  height: 150px;
+  width:  275px;
+  margin-top: 40%;
+  margin-left: 16%;
+}
+
+@media only screen and (min-width: 768px) {
+  .main{
+      height: 150px;
+      width:  275px;
+      margin-top: 10%;
+      margin-left: 40%;
   }
 }
