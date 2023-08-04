@@ -38,7 +38,7 @@ const SignUp = ({PostRegistrationData}) => {
         <form>
           <div className={styles.input_div}>
             <TextField
-              id="standard-basic"
+              id="standard-fname"
               label="Firstname"
               variant="standard"
               sx={{ label: { color: "#1976D2" }, input: { color: "white" } }}
@@ -48,7 +48,7 @@ const SignUp = ({PostRegistrationData}) => {
           </div>
           <div className={styles.input_div}>
             <TextField
-              id="standard-basic"
+              id="standard-lname"
               label="Lastname"
               variant="standard"
               sx={{ label: { color: "#1976D2" }, input: { color: "white" } }}
@@ -58,7 +58,7 @@ const SignUp = ({PostRegistrationData}) => {
           </div>
           <div className={styles.input_div}>
             <TextField
-              id="standard-basic"
+              id="standard-username"
               label="Username"
               variant="standard"
               sx={{ label: { color: "#1976D2" }, input: { color: "white" } }}
@@ -68,7 +68,7 @@ const SignUp = ({PostRegistrationData}) => {
           </div>
           <div className={styles.input_div}>
             <TextField
-              id="standard-basic"
+              id="standard-email"
               label="Email"
               variant="standard"
               sx={{ label: { color: "#1976D2" }, input: { color: "white" } }}

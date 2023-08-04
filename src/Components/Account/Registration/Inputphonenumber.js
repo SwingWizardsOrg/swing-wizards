@@ -11,7 +11,7 @@ import { auth } from '../../Firebase/Firebase';
 import { signInWithPhoneNumber } from 'firebase/auth';
 
 const Inputphonenumber = ({ PostToSwingServer }) => {
-  const [phone, setPhone] = useState('+91');
+  const [phone, setPhone] = useState('+254');
   const [hasFilled, setHasFilled] = useState(false);
   const [otp, setOtp] = useState('');
 
