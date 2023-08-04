@@ -8,7 +8,6 @@ import IconButton from "@mui/material/IconButton";
 
 const SignUp = ({PostRegistrationData}) => {
 
-
   const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
