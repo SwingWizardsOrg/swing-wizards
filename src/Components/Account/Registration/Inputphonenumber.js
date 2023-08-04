@@ -5,17 +5,17 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { TextField } from "@mui/material";
-import { auth } from "../../Firebase/firebase";
+import { auth } from "../../Firebase/Firebase";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import styles from '../../css/Inputphonenumber.module.css';
 
 
 const Inputphonenumber = (PostToSwingServer) => {
+
   const [phone, setPhone] = useState("+254");
   const [hasFilled, setHasFilled] = useState(false);
   const [otp, setOtp] = useState("");
 
-  //recaptcha
   //recaptcha
   const generateRecaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
