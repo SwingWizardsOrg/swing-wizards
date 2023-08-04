@@ -13,7 +13,7 @@ const Inputphonenumber = (PostToSwingServer) => {
   const [hasFilled, setHasFilled] = useState(false);
   const [otp, setOtp] = useState("");
 
-  
+  //recaptcha
   const generateRecaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha",
