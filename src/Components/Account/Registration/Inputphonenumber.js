@@ -14,6 +14,7 @@ const Inputphonenumber = (PostToSwingServer) => {
   const [otp, setOtp] = useState("");
 
   //recaptcha
+  //recaptcha
   const generateRecaptcha = () => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha",
