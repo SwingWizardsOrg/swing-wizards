@@ -1,26 +1,18 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React from "react";
 import Inputphonenumber from "./Inputphonenumber";
 
-
-
-
 const Postphone = (props) => {
-///
-
-  
 
   const UserName = props.SwingUserName
 
+  const PostToSwingServer=(Phonenumber)=>{
 
+    const qs = require("qs");
+    console.log(UserName+"username")
+    console.log(Phonenumber+"phonenumber")
 
-const PostToSwingServer=(Phonenumber)=>{
-
-  const qs = require("qs");
-  console.log(UserName+"username")
-  console.log(Phonenumber+"phonenumber")
-
-  axios
+    axios
     .patch(
       "https://swingwizards.onrender.com/tradex/user/phonenumber",
       qs.stringify({
@@ -47,13 +39,13 @@ const PostToSwingServer=(Phonenumber)=>{
       console.log(error);
       console.log(error.response);
     });
-}
+  }
 
-    return(
-      <div>
-     <Inputphonenumber PostToSwingServer={PostToSwingServer}/>
-      </div>
-     )
+  return(
+    <div>
+      <Inputphonenumber PostToSwingServer={PostToSwingServer}/>
+    </div>
+  )
 };
 
 export default Postphone;
