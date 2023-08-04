@@ -21,9 +21,8 @@ const Postphone = (props) => {
       })
     )
     .then((response) => {
-      if (response?.status === 200) {
-        
-         console.log(response);
+      if (response?.status === 200) { 
+       console.log(response);
       }
     })
     .catch((error) => {
