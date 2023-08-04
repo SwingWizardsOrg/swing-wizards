@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import { Routes, Route } from "react-router-dom";
+import App1 from "./Components/Account/Registration/Inputphonenumber";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/register" element={<Register />} />
+        <Route exact path="/phone" element={<App1 />} />
       </Routes>
       {/* <Footer/> */}
     </div>
