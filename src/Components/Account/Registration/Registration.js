@@ -7,13 +7,12 @@ import Postphone from "./Postphone";
 
 const Registration = () =>{
 
-const [isRegistered,setRegistered]= useState(false)
+  const [isRegistered,setRegistered]= useState(false)
+  const [SwingUserName, setSwingUserName]=useState(null)
 
-const [SwingUserName, setSwingUserName]=useState(null)
-
-const PostRegistrationData = (Data) => {
-  
-  const qs = require("qs");
+  const PostRegistrationData = (Data) => {
+    
+    const qs = require("qs");
 
     axios.post(
       "https://swingwizards.onrender.com/tradex/user/register",
@@ -48,18 +47,17 @@ const PostRegistrationData = (Data) => {
       console.log(error.response);
     });
     console.log(isRegistered)
-};
+  };
 
-return(
-  <div>
-       {!isRegistered ? (
-    <SignUp PostRegistrationData={PostRegistrationData}/>
-  ) : (
-    <Postphone SwingUserName={SwingUserName}/>
-  )}
-  
-  </div>
-)
-
+  return(
+    <div>
+      {!isRegistered ? (
+        <SignUp PostRegistrationData={PostRegistrationData}/>
+      ) : (
+        <Postphone SwingUserName={SwingUserName}/>
+      )}
+    </div>
+  )
 }
+
 export default Registration;

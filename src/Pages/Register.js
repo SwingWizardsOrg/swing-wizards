@@ -1,5 +1,7 @@
 import React from "react";
 import Registration from "../Components/Account/Registration/Registration";
+
+
 const Register = () => {
   return (
     <div>
