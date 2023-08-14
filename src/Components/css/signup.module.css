@@ -43,6 +43,15 @@
   grid-template-columns: auto auto;
   margin-left: 9%;
 }
+.usernameinput_div {
+  height: 40px;
+  margin-top: 50px;
+ 
+  /*padding: 5px;*/
+  /*border-bottom: 1px solid rgb(29, 161, 242);*/
+  width: 30%;
+  margin-left: 12%;
+}
 .input1 {
   color: rgb(131, 147, 160);
   background: none;
@@ -108,10 +117,19 @@
     width: 30%;
     margin-left: 26.5%;
   }
+  .usernameinput_div {
+    height: 40px;
+    margin-top: 50px;
+   
+    /*padding: 5px;*/
+    /*border-bottom: 1px solid rgb(29, 161, 242);*/
+    width: 30%;
+    margin-left: 28%;
+  }
   .input_div_1{
     display: grid;
     grid-template-columns: auto auto;
-    margin-left: 22%;
+    margin-left: 27%;
   }
  
   .subdiv1 {
