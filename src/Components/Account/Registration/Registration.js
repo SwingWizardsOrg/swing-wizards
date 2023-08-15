@@ -17,11 +17,11 @@ const Registration = () =>{
     axios.post(
       "https://swingwizards.onrender.com/tradex/user/register",
       qs.stringify({
-        firstname: Data.firstname,
-        lastname: Data.lastname,
-        username: Data.username,
-        email: Data.email,
-        password: Data.password,
+        firstname: Data.firstname.Value,
+        lastname: Data.lastname.Value,
+        username: Data.username.Value,
+        email: Data.email.Value,
+        password: Data.password.Value
       })
     )
 
