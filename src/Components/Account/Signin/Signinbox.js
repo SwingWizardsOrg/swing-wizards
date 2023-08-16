@@ -18,7 +18,7 @@ const Signinbox = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs);
-    PostLogininData(inputs)
+    PostLogininData(inputs);
   };
   const handleToggle = () => {
     if (type === "password") {
