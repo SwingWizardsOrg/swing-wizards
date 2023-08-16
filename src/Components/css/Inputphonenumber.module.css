@@ -1,15 +1,15 @@
-.main{
-    height: 150px;
-    width:  275px;
-    margin-top: 40%;
-    margin-left: 16%;
+.main {
+  height: 150px;
+  width: 275px;
+  margin-top: 40%;
+  margin-left: 16%;
 }
 
 @media only screen and (min-width: 768px) {
-    .main{
-        height: 150px;
-        width:  275px;
-        margin-top: 10%;
-        margin-left: 40%;
-    }
+  .main {
+    height: 150px;
+    width: 275px;
+    margin-top: 10%;
+    margin-left: 40%;
+  }
 }
