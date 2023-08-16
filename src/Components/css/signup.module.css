@@ -38,7 +38,7 @@
   width: 70%;
   margin-left: 5%;
 }
-.input_div_1{
+.input_div_1 {
   display: grid;
   grid-template-columns: auto auto;
   margin-left: 9%;
@@ -46,7 +46,7 @@
 .usernameinput_div {
   height: 40px;
   margin-top: 50px;
- 
+
   /*padding: 5px;*/
   /*border-bottom: 1px solid rgb(29, 161, 242);*/
   width: 30%;
@@ -71,7 +71,7 @@
 }
 .eyeIcon {
   margin-left: 20%;
-  cursor : pointer;
+  cursor: pointer;
 }
 .input1:focus {
   outline: thin dotted;
@@ -111,7 +111,7 @@
   .input_div {
     height: 40px;
     margin-top: 50px;
-   
+
     /*padding: 5px;*/
     /*border-bottom: 1px solid rgb(29, 161, 242);*/
     width: 30%;
@@ -120,18 +120,18 @@
   .usernameinput_div {
     height: 40px;
     margin-top: 50px;
-   
+
     /*padding: 5px;*/
     /*border-bottom: 1px solid rgb(29, 161, 242);*/
     width: 30%;
     margin-left: 28%;
   }
-  .input_div_1{
+  .input_div_1 {
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 27%;
   }
- 
+
   .subdiv1 {
     height: 10%;
     margin-top: 0%;
@@ -173,18 +173,18 @@
     margin-left: 20%;
   }
 }
-.main{
+.main {
   height: 150px;
-  width:  275px;
+  width: 275px;
   margin-top: 40%;
   margin-left: 16%;
 }
 
 @media only screen and (min-width: 768px) {
-  .main{
-      height: 150px;
-      width:  275px;
-      margin-top: 10%;
-      margin-left: 40%;
+  .main {
+    height: 150px;
+    width: 275px;
+    margin-top: 10%;
+    margin-left: 40%;
   }
 }
