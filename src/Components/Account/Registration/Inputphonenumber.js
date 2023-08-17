@@ -7,14 +7,16 @@ import Typography from "@mui/material/Typography";
 import { TextField } from "@mui/material";
 import { auth } from "../../Firebase/Firebase";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import styles from '../../css/Inputphonenumber.module.css';
+import styles from "../../css/Inputphonenumber.module.css";
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> leon
+=======
+>>>>>>> 8391a27837922b45192303eff04cfea2ec143c6d
 const Inputphonenumber = (PostToSwingServer) => {
-
   const [phone, setPhone] = useState("+254");
   const [hasFilled, setHasFilled] = useState(false);
   const [otp, setOtp] = useState("");
@@ -64,7 +66,7 @@ const Inputphonenumber = (PostToSwingServer) => {
           // User signed in successfully.
           let user = result.user;
           console.log(user);
-          
+
           alert("User signed in successfully");
           PostToSwingServer(phone);
           // ...

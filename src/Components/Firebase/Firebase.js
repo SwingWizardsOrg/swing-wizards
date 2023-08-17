@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "swingwizards-682f9.appspot.com",
   messagingSenderId: "427204282312",
   appId: "1:427204282312:web:6c3ed8a16e5f64e24ba2fd",
-  measurementId: "G-J4RZ15J28K"
+  measurementId: "G-J4RZ15J28K",
 };
 
 const app = initializeApp(firebaseConfig);
