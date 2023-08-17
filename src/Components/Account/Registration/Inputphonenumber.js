@@ -9,13 +9,7 @@ import { auth } from "../../Firebase/Firebase";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import styles from "../../css/Inputphonenumber.module.css";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> leon
-=======
->>>>>>> 8391a27837922b45192303eff04cfea2ec143c6d
 const Inputphonenumber = (PostToSwingServer) => {
   const [phone, setPhone] = useState("+254");
   const [hasFilled, setHasFilled] = useState(false);
