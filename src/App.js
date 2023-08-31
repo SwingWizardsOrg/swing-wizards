@@ -1,23 +1,20 @@
-import React from "react"
+import React from "react";
+import { isMobile } from "react-device-detect";
+import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import { Routes, Route } from "react-router-dom";
-import {isMobile} from 'react-device-detect';
 
 function App() {
-
   return (
-
     <div>
-     {!isMobile ? (
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-
-      </Routes> ) : (
+      {!isMobile ? (
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      ) : (
         <div>
-       This website is temporarily only available for Desktop Devices
+          This website is temporarily only available for Desktop Devices
         </div>
-      )
-}
+      )}
     </div>
   );
 }
