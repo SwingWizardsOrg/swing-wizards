@@ -4,24 +4,16 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Logo from "./Swingappbarfragments/Logo";
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import Profile from "./Swingappbarfragments/Profile"; 
+import Profile from "./Swingappbarfragments/Profile";
+import SwipeableTemporaryDrawer from "../Drawer/Drawer";
 
-const Swingappbar = () => {
+const Swingappbar = ({switchmode}) => {
   return (
       <Box sx={{ flexGrow: 1}}>
-      <AppBar position="fixed" sx={{backgroundColor: "black"}}>
+      <AppBar position="fixed" sx={{backgroundColor: "secondary.main",
+      }}>
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
+            <SwipeableTemporaryDrawer switchmode={switchmode}/>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <Logo />
           </Typography>
@@ -32,4 +24,4 @@ const Swingappbar = () => {
   );
 };
 
-export default Swingappbar;
+export {Swingappbar};
