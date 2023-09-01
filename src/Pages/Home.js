@@ -1,21 +1,19 @@
 import React from "react";
-import Swingappbar from "../Components/bars/Swingappbar";
-import ProductCard from "../Components/Cards/Productcard";
+import {Swingappbar} from "../Components/bars/Swingappbar";
+import {ProductCard} from "../Components/Cards/Productcard";
 import styles from  "../Components/css/Home.module.css"
+import { Box } from "@mui/material";
+import { Landingimage } from "../Components/Landingcomponents/Landingimage";
+import { Productcardcontainers } from "../Components/Landingcomponents/productcardcontainers";
 
-const Home = () => {
+const Home = ({switchmode}) => {
   return (
     <div>
-      <Swingappbar />
-      <section className="hero">
-        <ProductCard Productname="Hooli"/>
-        <ProductCard Productname="TradeShare"/>
-        <ProductCard Productname="SwingTrader"/>
-      </section>
-<div className={styles.aboutdiv}>
-</div>
+      <Swingappbar switchmode={switchmode}/>
+      <Landingimage />   
+      <Productcardcontainers />
       </div>
   );
 };
 
-export default Home;
+export {Home};
