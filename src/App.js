@@ -36,10 +36,9 @@ function App() {
         <Route exact path="/registration" element={<Registration />} />
       </Routes> ) : (
         <div>
-       This website is temporarily only available for Desktop Devices
+          This website is temporarily only available for Desktop Devices
         </div>
-      )
-}
+      )}
     </div>
     </ThemeProvider>
   );
