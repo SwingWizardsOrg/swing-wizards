@@ -1,21 +1,46 @@
-import React from "react";
-import { isMobile } from "react-device-detect";
-import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
+import React, {useState} from "react"
+import {Home} from "./Pages/Home";
+import { Routes, Route } from "react-router-dom";
+import {isMobile} from 'react-device-detect';
+import SwipeableTemporaryDrawer from "./Components/Drawer/Drawer";
+import Registration from "./Components/Account/Registration/Registration";
+import {createTheme, ThemeProvider} from "@mui/material"
+
+
 
 function App() {
+
+  const [Darkmode, setDarkmode]= useState(false)
+
+  const switchmode = () => {
+  setDarkmode(!Darkmode)
+  }
+
+  const theme= createTheme(
+    {
+      palette:{
+        secondary:{
+          main: Darkmode ? '#000000' : '#FFFFFF',
+        },
+      }
+    },
+  )
+
   return (
+    <ThemeProvider theme={theme}>
     <div>
-      {!isMobile ? (
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-        </Routes>
-      ) : (
+     {!isMobile ? (
+      <Routes>
+        <Route exact path="/" element={<Home switchmode={switchmode} />} />
+        <Route exact path="/drawer" element={<SwipeableTemporaryDrawer />} />
+        <Route exact path="/registration" element={<Registration />} />
+      </Routes> ) : (
         <div>
           This website is temporarily only available for Desktop Devices
         </div>
       )}
     </div>
+    </ThemeProvider>
   );
 }
 

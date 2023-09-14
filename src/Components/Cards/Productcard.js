@@ -1,19 +1,17 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import { CardActionArea } from '@mui/material';
 import styles from "../css/Card.module.css";
 
-
 const ProductCard =({Productname})=>{
   return (
-    <Card sx={{mt:60, ml:3}}>
+    <Card className={styles.main} sx={{}}>
       <CardActionArea>
-        <CardContent className={styles.Productcardcontent}>
-           <div className={styles.Productcard_div}>{Productname}</div>
-        </CardContent>
+        <div  className={styles.content} >
+           <div className={styles.productname} >{Productname}</div>
+        </div>
       </CardActionArea>
     </Card>
   );
 }
-export default ProductCard;
+export {ProductCard};
