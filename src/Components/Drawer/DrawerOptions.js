@@ -10,7 +10,7 @@ return(
     //checked={checked}
     onChange={switchmode}
       inputProps={{ 'aria-label': 'controlled' }}
-    />
+      defaultChecked />
 </div>
 )
 }
