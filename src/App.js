@@ -10,7 +10,7 @@ import {createTheme, ThemeProvider} from "@mui/material"
 
 function App() {
 
-  const [Darkmode, setDarkmode]= useState(false)
+  const [Darkmode, setDarkmode]= useState(true)
 
   const switchmode = () => {
   setDarkmode(!Darkmode)
