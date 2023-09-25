@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../css/signup.module.css";
+//import styles from "../../css/signup.module.css";
 import { TextField } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
@@ -75,15 +75,15 @@ const SignUp = ({ PostRegistrationData }) => {
   };
 
   return (
-    <div className={styles.main1}>
+    <div>
       <div>
-        <div className={styles.subdiv}></div>
-        <div className={styles.subdiv1}>
+        <div></div>
+        <div>
           <h1>Create your account</h1>
         </div>
-        <div className={styles.subdiv2}>
+        <div>
           <form>
-            <div className={styles.input_div}>
+            <div>
               <TextField
                 error={error.firstnameError}
                 helperText="Please fill out this field"
@@ -104,7 +104,7 @@ const SignUp = ({ PostRegistrationData }) => {
                 }
               />
             </div>
-            <div className={styles.input_div}>
+            <div>
               <TextField
                 error={error.lastnameError}
                 helperText="Please fill out this field"
@@ -125,7 +125,7 @@ const SignUp = ({ PostRegistrationData }) => {
                 }
               />
             </div>
-            <div className={styles.usernameinput_div}>
+            <div>
               <TextField
                 error={error.usernameError}
                 helperText="Username must be atleast 4 characters"
@@ -149,7 +149,7 @@ const SignUp = ({ PostRegistrationData }) => {
                 }
               />
             </div>
-            <div className={styles.input_div}>
+            <div>
               <TextField
                 error={error.emailError}
                 helperText="Please fill out this field"
@@ -170,9 +170,9 @@ const SignUp = ({ PostRegistrationData }) => {
                 }
               />
             </div>
-            <div className={styles.input_div}>
-              <div className={styles.input_div_1}>
-                <div className={styles.input_div_1_1}>
+            <div>
+              <div>
+                <div>
                   <TextField
                     error={error.passwordError}
                     helperText="Password must be atleast 8 characters"
@@ -201,7 +201,7 @@ const SignUp = ({ PostRegistrationData }) => {
                     }
                   />
                 </div>
-                <div className={styles.input_div_1_2}>
+                <div>
                   <IconButton
                     aria-label="toggle password visibility"
                     onClick={handleClickShowPassword}
@@ -215,10 +215,9 @@ const SignUp = ({ PostRegistrationData }) => {
               </div>
             </div>
 
-            <div className={styles.submission_div}>
+            <div>
               <button
                 type="submit"
-                className={styles.submission_button}
                 onClick={handleSubmit}
               >
                 Sign up
