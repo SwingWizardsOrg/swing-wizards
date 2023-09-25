@@ -1,6 +1,6 @@
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Profilepopup = ({anchorEl, handleClose}) =>{ 
 
 return(    
