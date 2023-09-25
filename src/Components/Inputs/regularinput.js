@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Card from '@mui/material/Card';
 import styles from "../css/Regularinput.module.css";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 const Regularinput =(props)=>{
