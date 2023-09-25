@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import styles from "../css/SignUp.module.css";
+import styles from "../css/signup.module.css";
 import { Regularinput } from '../Inputs/regularinput';
 import { Passwordinput } from '../Inputs/passwordinput';
 import Button from '@mui/material/Button';
@@ -8,7 +8,6 @@ const SignUp =()=>{
 const [Inputs, setinputs]=React.useState({
 })
 
-const[buttonstatus, setbuttonstatus]=React.useState(0)
 
 const handleChange = (e) => {
 
@@ -18,7 +17,6 @@ const handleChange = (e) => {
 };
 const post = (e)=>{
 console.log(Inputs)
-console.log(buttonstatus)
 }
 
   return (
@@ -30,7 +28,7 @@ console.log(buttonstatus)
           <Regularinput  Label="Username (minimum of 4 characters)" Limit={4} Handlechange={handleChange}/>
           <Regularinput Label= "Email" Limit={10} Handlechange={handleChange}/>
           <Passwordinput Label= "Password (minimum of 8 characters)" Limit={8} Handlechange={handleChange}/>
-    <Button className={styles.MuiButton} variant="contained" sx={{ml:1.3}} disabled={buttonstatus} onClick={post}>
+    <Button className={styles.MuiButton} variant="contained" sx={{ml:1.3}} disabled={false} onClick={post}>
         Sign up
       </Button>
         </div>
