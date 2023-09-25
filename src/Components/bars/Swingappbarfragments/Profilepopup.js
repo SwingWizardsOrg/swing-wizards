@@ -1,6 +1,6 @@
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-
+import { Link } from "react-router-dom";
 const Profilepopup = ({anchorEl, handleClose}) =>{ 
 
 return(    
@@ -19,8 +19,12 @@ transformOrigin={{
 open={Boolean(anchorEl)}
 onClose={handleClose}
 >
+<Link to="/signin">
 <MenuItem onClick={handleClose}>Login</MenuItem>
+</ Link>
+<Link to= "/signup">
 <MenuItem onClick={handleClose}>SignUp</MenuItem>
+</Link>
 </Menu>
 )
 }

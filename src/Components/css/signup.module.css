@@ -1,190 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-.main1 {
-  background-color: black;
-  height: 100vh;
-  color: white;
-  font-family: Roboto;
-  font-size: medium;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap");
+.main{
+    background-color:#010409;
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
 }
-.subdiv {
-  height: 100px;
-  width: 100%;
-  padding-top: 20px;
-  text-align: center;
-}
-.leaf {
-  height: 60px;
-  width: 60px;
-}
-.subdiv1 {
-  height: 10%;
-  margin-top: 20%;
-  color: white;
-  text-align: center;
-  margin-bottom: 0%;
-}
-.subdiv2 {
-  height: 30%;
-  color: white;
-  text-align: center;
-  margin-top: 0%;
-}
-.input_div {
-  height: 40px;
-  margin-top: 50px;
-  padding: 5px;
+.signin{
+width:340px;
+background-color: #21262d;
+padding-left: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+border: 1px solid #30363d;
+    border-radius: 6px;
 
-  /* border-bottom: 1px solid rgb(29, 161, 242); */
-  width: 70%;
-  margin-left: 5%;
 }
-.input_div_1 {
-  display: grid;
-  grid-template-columns: auto auto;
-  margin-left: 9%;
+.fields{
+    background-color: #161B22;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    transition: 2s;
+    height: 250px;
 }
-.usernameinput_div {
-  height: 40px;
-  margin-top: 50px;
-
-  /*padding: 5px;*/
-  /*border-bottom: 1px solid rgb(29, 161, 242);*/
-  width: 30%;
-  margin-left: 12%;
+.username{
+    display: block;
+    background-color: black;
+    border-radius: 5px;
+    border: solid;
 }
-.input1 {
-  color: rgb(131, 147, 160);
-  background: none;
-  font-size: 15px;
-  background: none;
-  border: none;
-  width: 70%;
-  margin-right: 25%;
+.field{
+    color:white;
+    font-style: Roboto;
 }
-.input {
-  color: rgb(131, 147, 160);
-  background: none;
-  font-size: 15px;
-  background: none;
-  border: none;
-  width: 70%;
-}
-.eyeIcon {
-  margin-left: 20%;
-  cursor: pointer;
-}
-.input1:focus {
-  outline: thin dotted;
-  outline: 0px auto -webkit-focus-ring-color;
-  outline-offset: 0px;
-}
-
-.input:focus {
-  outline: thin dotted;
-  outline: 0px auto -webkit-focus-ring-color;
-  outline-offset: 0px;
-}
-
-.submission_div {
-  margin-top: 50px;
-  padding: 10px;
-  width: 80%;
-}
-.submission_button {
-  background-color: red;
-  margin-right: 55%;
-  color: white;
-  border-radius: 10px;
-  border: none;
-  height: 40px;
-  width: 60px;
-}
-.submission_button:hover {
-  background-color: rgb(211, 73, 78);
-}
-.submission_button:focus {
-  outline: thin dotted;
-  outline: 0px auto -webkit-focus-ring-color;
-  outline-offset: 0px;
-}
-@media only screen and (min-width: 768px) {
-  .input_div {
-    height: 40px;
-    margin-top: 50px;
-
-    /*padding: 5px;*/
-    /*border-bottom: 1px solid rgb(29, 161, 242);*/
-    width: 30%;
-    margin-left: 26.5%;
-  }
-  .usernameinput_div {
-    height: 40px;
-    margin-top: 50px;
-
-    /*padding: 5px;*/
-    /*border-bottom: 1px solid rgb(29, 161, 242);*/
-    width: 30%;
-    margin-left: 28%;
-  }
-  .input_div_1 {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-left: 27%;
-  }
-
-  .subdiv1 {
-    height: 10%;
-    margin-top: 0%;
-    color: white;
-    text-align: center;
-    margin-bottom: 0%;
-  }
-  .submission_div {
-    margin-top: 50px;
-    width: 80%;
-  }
-  .submission_button {
-    background-color: red;
-    margin-left: 43%;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    height: 40px;
-    width: 60px;
-  }
-  .input1 {
-    color: rgb(131, 147, 160);
-    background: none;
-    font-size: 15px;
-    background: none;
-    border: none;
-    width: 70%;
-    margin-right: 25%;
-  }
-  .input {
-    color: rgb(131, 147, 160);
-    background: none;
-    font-size: 15px;
-    background: none;
-    border: none;
-    width: 70%;
-  }
-  .eyeIcon {
-    margin-left: 20%;
-  }
-}
-.main {
-  height: 150px;
-  width: 275px;
-  margin-top: 40%;
-  margin-left: 16%;
-}
-
-@media only screen and (min-width: 768px) {
-  .main {
-    height: 150px;
-    width: 275px;
-    margin-top: 10%;
-    margin-left: 40%;
-  }
+.MuiButton{
+    width: 250px;
 }
