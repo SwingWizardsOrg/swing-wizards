@@ -4,6 +4,7 @@ import styles from "../css/signup.module.css";
 import { Regularinput } from '../Inputs/regularinput';
 import { Passwordinput } from '../Inputs/passwordinput';
 import Button from '@mui/material/Button';
+import { Callout } from './Signup_signin_switch';
 const SignUp =()=>{
 const [Inputs, setinputs]=React.useState({
 })
@@ -20,20 +21,33 @@ console.log(Inputs)
 }
 
   return (
+    <div>
     <Card>
     <div className={styles.main}>
+    <div>
         <div className= {styles.signin}> 
         <Regularinput Label= "Firstname" Limit={1} Handlechange={handleChange} />
         <Regularinput Label= "Lastname" Limit={1} Handlechange={handleChange}/>        
           <Regularinput  Label="Username (minimum of 4 characters)" Limit={4} Handlechange={handleChange}/>
           <Regularinput Label= "Email" Limit={10} Handlechange={handleChange}/>
           <Passwordinput Label= "Password (minimum of 8 characters)" Limit={8} Handlechange={handleChange}/>
-    <Button className={styles.MuiButton} variant="contained" sx={{ml:1.3}} disabled={false} onClick={post}>
+    <Button className={styles.MuiButton} variant="contained" sx={{ml:1.3 }} disabled={false} onClick={post}>
         Sign up
       </Button>
-        </div>
+      </div>
+
+      <div className={styles.Callout}>
+      <Callout Declaration="Already have an account?" Suggestion="Sign in" Link="/signin"/>
     </div>
+
+        </div>
+
+       
+
+    </div>
+   
     </Card>
+    </div>
   );
 }
 export {SignUp};
