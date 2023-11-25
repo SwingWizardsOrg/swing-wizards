@@ -17,6 +17,7 @@ padding-top: 30px;
 padding-bottom: 30px;
 border: 1px solid #30363d;
     border-radius: 6px;
+ display:inline-block;
 
 }
 .fields{
@@ -40,4 +41,8 @@ border: 1px solid #30363d;
 }
 .MuiButton{
     width: 250px;
+    background-color: #2F81F7;
+}
+.Callout{
+    display: block;
 }
